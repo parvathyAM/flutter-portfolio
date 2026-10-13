@@ -203,8 +203,8 @@ body:before{filter:blur(100px);opacity:.22;background:radial-gradient(circle at 
 .btn.main{border-color:var(--blue);background:var(--blue)}
 h1{font-size:clamp(40px,6vw,62px);font-weight:700;letter-spacing:-.03em}
 .role{font-size:19px;font-weight:600}
-.hero .wrap{grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
-.stackrow{margin-top:28px}
+.hero .wrap{grid-template-columns:1.15fr .85fr;gap:40px;align-items:start}
+.stackrow{margin-top:24px}
 .chips span{background:var(--tint);color:var(--blue)}
 
 /* Hero Developer Code Card */
@@ -212,6 +212,8 @@ h1{font-size:clamp(40px,6vw,62px);font-weight:700;letter-spacing:-.03em}
   width: 100%;
   max-width: 440px;
   margin-left: auto;
+  align-self: start;
+  margin-top: 6px;
   background: #111827;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 20px;
@@ -923,10 +925,10 @@ nav a.active {
 /* Hero Metrics Bar */
 .hero-metrics {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  margin-top: 36px;
-  padding-top: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 26px;
+  padding-top: 20px;
   border-top: 1px solid var(--line);
 }
 .metric-tile {
@@ -1627,21 +1629,6 @@ nav a.nav-active::after {
     <div class="metric-label">Cross-Platform Android &amp; iOS Codebase</div>
   </div>
 </div>
-</div>
-  <div class="metric-tile">
-    <div class="metric-num" data-target="16">16+</div>
-    <div class="metric-label">Interactive Production Screens &amp; Views</div>
-  </div>
-  <div class="metric-tile">
-    <div class="metric-num" data-target="99">99.9%</div>
-    <div class="metric-label">Crash-Free Riverpod &amp; Provider Sessions</div>
-  </div>
-  <div class="metric-tile">
-    <div class="metric-num" data-target="100">&lt; 100ms</div>
-    <div class="metric-label">Realtime Supabase PostgreSQL Queries</div>
-  </div>
-</div>
-
 </div>
 <div class="hero-code-card" aria-label="Flutter Developer Profile">
   <div class="hero-card-header">
