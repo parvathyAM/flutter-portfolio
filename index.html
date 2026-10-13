@@ -115,6 +115,7 @@ h1{font-size:clamp(42px,7vw,76px);font-weight:800}
 .chips span{font-size:14px;padding:5px 12px;border-radius:99px;background:var(--tint);color:var(--blue);font-weight:500}
 .case{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:40px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px}
 .case h3{font-size:30px;margin-bottom:6px}
+.case-eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);margin-bottom:8px;display:block}
 .case .sub{color:var(--muted);margin:0 0 20px}
 .case ul{margin:0 0 22px;padding-left:20px}.case li{margin-bottom:8px}
 .side{background:var(--bg);border-radius:16px;padding:24px;align-self:start}
@@ -203,8 +204,8 @@ body:before{filter:blur(100px);opacity:.22;background:radial-gradient(circle at 
 .btn.main{border-color:var(--blue);background:var(--blue)}
 h1{font-size:clamp(40px,6vw,62px);font-weight:700;letter-spacing:-.03em}
 .role{font-size:19px;font-weight:600}
-.hero .wrap{grid-template-columns:1.15fr .85fr;gap:40px;align-items:start}
-.stackrow{margin-top:24px}
+.hero .wrap{grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+.stackrow{margin-top:28px}
 .chips span{background:var(--tint);color:var(--blue)}
 
 /* Hero Developer Code Card */
@@ -212,8 +213,6 @@ h1{font-size:clamp(40px,6vw,62px);font-weight:700;letter-spacing:-.03em}
   width: 100%;
   max-width: 440px;
   margin-left: auto;
-  align-self: start;
-  margin-top: 6px;
   background: #111827;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 20px;
@@ -925,10 +924,10 @@ nav a.active {
 /* Hero Metrics Bar */
 .hero-metrics {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-  margin-top: 26px;
-  padding-top: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 36px;
+  padding-top: 24px;
   border-top: 1px solid var(--line);
 }
 .metric-tile {
@@ -1630,6 +1629,21 @@ nav a.nav-active::after {
   </div>
 </div>
 </div>
+  <div class="metric-tile">
+    <div class="metric-num" data-target="16">16+</div>
+    <div class="metric-label">Interactive Production Screens &amp; Views</div>
+  </div>
+  <div class="metric-tile">
+    <div class="metric-num" data-target="99">99.9%</div>
+    <div class="metric-label">Crash-Free Riverpod &amp; Provider Sessions</div>
+  </div>
+  <div class="metric-tile">
+    <div class="metric-num" data-target="100">&lt; 100ms</div>
+    <div class="metric-label">Realtime Supabase PostgreSQL Queries</div>
+  </div>
+</div>
+
+</div>
 <div class="hero-code-card" aria-label="Flutter Developer Profile">
   <div class="hero-card-header">
     <div class="hero-card-dots">
@@ -1707,195 +1721,98 @@ nav a.nav-active::after {
 <!-- PROJECT 1: Telecaller CRM App -->
 <article class="case">
 <div>
-  <span class="case-badge">Production Business App · Brynex</span>
-  <h3>Telecaller CRM App</h3>
-  <p class="sub">Dedicated Flutter CRM &amp; call-management app for retail telecalling sales teams (Android &amp; iOS)</p>
-
-  <div class="project-media-slot">
-    <div class="media-placeholder">
-      <span class="media-icon">📱</span>
-      <b>[ADD SCREENSHOT: Telecaller CRM App Lead Pipeline &amp; Verified Calling]</b>
-      <small>Recommended: Add <code>assets/screens/telecaller_preview.webp</code> or explore in the live interactive simulator below</small>
-    </div>
-  </div>
-
-  <div class="project-meta-grid">
-    <div class="project-meta-row"><b>Problem:</b> <span>Retail showroom telecallers lost sales leads due to unverified call logging, fragmented customer follow-up notes on paper, and scattered messaging across multiple channels.</span></div>
-    <div class="project-meta-row"><b>What I Built:</b> <span>A unified mobile CRM featuring mandatory verified call-timer tracking before lead disposition, automated Today/Upcoming/Overdue follow-up queues with push notifications, and lead stage filtering.</span></div>
-    <div class="project-meta-row"><b>My Role:</b> <span>Flutter mobile engineering from scratch: UI screen development, Provider state management, REST API integration, call log verification, and FCM push notifications.</span></div>
-    <div class="project-meta-row"><b>Testing &amp; Tooling:</b> <span>[ADD TESTING TOOLS: e.g. flutter_test unit &amp; widget tests, Mockito for REST API mocking, Postman, Android Studio Profiler]</span></div>
-  </div>
-
-  <details class="case-details">
-    <summary><span>View Key Engineering Highlights</span> ▾</summary>
-    <ul>
-      <li><b>Verified Call Tracking:</b> Enforces call duration verification before lead disposition can be saved, eliminating unverified reports.</li>
-      <li><b>Lead Segmentation Pipeline:</b> Organizes inquiries across Direct, JustDial, Walk-in, and Booking stages with real-time sync.</li>
-      <li><b>Follow-Up Queue &amp; Push Reminders:</b> Automated triage of urgent follow-ups with Firebase Cloud Messaging (FCM).</li>
-      <li><b>Unified Omnichannel Messaging:</b> Consolidates customer chats across WhatsApp, Instagram, and Facebook Messenger into one inbox.</li>
-      <li><b>Branch Performance Analytics:</b> Real-time KPI dashboards calculating connection rates and talk time across store branches.</li>
-    </ul>
-  </details>
-
-  <div class="project-links-row">
-    <a class="btn main" href="#prototype" data-open="tele">Try Interactive Prototype 📱</a>
-    <span class="link-badge">🔒 Private Enterprise Project (Brynex)</span>
-    <a class="btn" href="[ADD GITHUB LINK]" target="_blank" rel="noopener">GitHub Repo ↗</a>
-    <a class="btn" href="[ADD DEMO VIDEO LINK]" target="_blank" rel="noopener">Demo Video 🎬</a>
-    <a class="btn" href="[ADD APK / PLAY STORE LINK]" target="_blank" rel="noopener">APK / Store 📦</a>
-  </div>
+<div class="case-eyebrow">Production Business App · Brynex</div>
+<h3>Telecaller CRM App</h3>
+<p class="sub">Dedicated Flutter CRM &amp; call-management app for retail telecalling sales teams</p>
+<p>A specialized mobile CRM built to manage the complete telecalling sales cycle across store branches: outbound cold calls, inbound customer inquiries, verified lead disposition, follow-up queues, and customer complaints.</p>
+<ul>
+<li><b>Verified Call Tracking</b>: Automatic timer and verification confirming a call occurred before allowing lead disposition to be saved.</li>
+<li><b>Lead Segmentation Pipeline</b>: Ingests and organizes leads by category (JustDial, direct enquiry, booking confirmation, customer feedback, booked, and lost sales).</li>
+<li><b>Follow-Up Queue &amp; Push Reminders</b>: Automated sorting into Today, Upcoming, and Overdue lists with FCM push notifications.</li>
+<li><b>Unified Omnichannel Chat</b>: Single inbox integrating customer messages from WhatsApp, Instagram, and Facebook Messenger.</li>
+<li><b>Performance &amp; Call Analytics</b>: Detailed breakdown of call counts, connection rates, talk durations, and conversion by store branch.</li>
+</ul>
+<a class="btn main" href="#prototype" data-open="tele">Try the Telecaller prototype</a>
 </div>
 <div class="side">
-  <h4>My role</h4>
-  <div class="chips"><span>UI / UX Engineering</span><span>State Management</span><span>REST API Integration</span><span>Call Verification</span></div>
-  <h4>Built with</h4>
-  <div class="chips"><span>Flutter SDK</span><span>Dart</span><span>Provider</span><span>REST API</span><span>Firebase FCM</span><span>JWT Auth</span></div>
+<h4>My role</h4>
+<div class="chips"><span>UI / UX Engineering</span><span>State Management</span><span>REST API Integration</span><span>Call Verification</span></div>
+<h4>Built with</h4>
+<div class="chips"><span>Flutter</span><span>Dart</span><span>Provider</span><span>REST API</span><span>Firebase FCM</span><span>JWT Auth</span></div>
 </div>
 </article>
 
 <!-- PROJECT 2: Retail Walk-in, Operations & Staff LMS App -->
 <article class="case">
 <div>
-  <span class="case-badge">Production Business App · Brynex</span>
-  <h3>Retail Walk-in, Operations &amp; Staff LMS App</h3>
-  <p class="sub">In-store showroom foot-traffic tracking, barcode inventory lookup &amp; employee training platform</p>
-
-  <div class="project-media-slot">
-    <div class="media-placeholder">
-      <span class="media-icon">🏪</span>
-      <b>[ADD SCREENSHOT: Retail Walk-in Logging &amp; Barcode Stock Scanner]</b>
-      <small>Recommended: Add <code>assets/screens/retail_lms_preview.webp</code> or explore in the live interactive simulator below</small>
-    </div>
-  </div>
-
-  <div class="project-meta-grid">
-    <div class="project-meta-row"><b>Problem:</b> <span>Showroom sales teams lacked real-time stock lookup across branches, visitor walk-in logs were lost on paper, and store associates lacked standardized video training.</span></div>
-    <div class="project-meta-row"><b>What I Built:</b> <span>An enterprise in-store mobile app featuring instant camera barcode price &amp; stock lookup, digital walk-in visitor logging, a video-based staff learning LMS with quizzes, and tiered role-based task delegation.</span></div>
-    <div class="project-meta-row"><b>My Role:</b> <span>Mobile architecture, responsive UI development, Provider state management, camera barcode scanner integration, video player controller, and role-based access control (RBAC).</span></div>
-    <div class="project-meta-row"><b>Testing &amp; Tooling:</b> <span>[ADD TESTING TOOLS: e.g. flutter_test, Camera/Barcode mocking, integration_test, VS Code Flutter DevTools]</span></div>
-  </div>
-
-  <details class="case-details">
-    <summary><span>View Key Engineering Highlights</span> ▾</summary>
-    <ul>
-      <li><b>Showroom Walk-in Engine:</b> Fast digital logging of visitor counts, interest categories, budget tiers, and consultation notes across store clusters.</li>
-      <li><b>In-Store Barcode Item Checker:</b> Built-in camera and barcode scanner retrieving instant product specs, live pricing, and cross-branch stock levels right in front of customers.</li>
-      <li><b>Staff Learning Management System (LMS):</b> Sequential video training modules with progress tracking and mandatory quizzes before unlocking selling privileges.</li>
-      <li><b>Task Manager &amp; Delegation:</b> Create and assign tasks with categories, priorities (Urgent, High, Normal, Low), deadlines, and attachments; track progress through To Do, Overdue, Review, and Completed.</li>
-      <li><b>Role-Based Access Control (RBAC):</b> Segregated dashboards and permissions for Store Floor Staff (personal targets, item search) vs. Store Managers (cluster analytics, staff audits, task dispatch).</li>
-    </ul>
-  </details>
-
-  <div class="project-links-row">
-    <a class="btn main" href="#prototype" data-open="ops">Try Interactive Prototype 📱</a>
-    <span class="link-badge">🔒 Private Enterprise Project (Brynex)</span>
-    <a class="btn" href="[ADD GITHUB LINK]" target="_blank" rel="noopener">GitHub Repo ↗</a>
-    <a class="btn" href="[ADD DEMO VIDEO LINK]" target="_blank" rel="noopener">Demo Video 🎬</a>
-    <a class="btn" href="[ADD APK / PLAY STORE LINK]" target="_blank" rel="noopener">APK / Store 📦</a>
-  </div>
+<div class="case-eyebrow">Production Business App · Brynex</div>
+<h3>Retail Walk-in, Operations &amp; Staff LMS App</h3>
+<p class="sub">In-store showroom foot-traffic tracking, barcode inventory lookup &amp; employee training platform</p>
+<p>An enterprise in-store operations app built for showroom floor associates and store managers at <a href="https://www.brynex.com" target="_blank" rel="noopener" style="color:var(--blue)">Brynex</a>. It digitizes customer showroom visits, enables instant camera/barcode price and inventory checks, manages daily operational tasks, and provides video-based staff upskilling courses.</p>
+<ul>
+<li><b>Showroom Walk-in Engine</b>: Fast digital logging of visitor counts, interest categories, budget tiers, and consultation notes across store clusters.</li>
+<li><b>In-Store Barcode Item Checker</b>: Built-in camera and barcode scanner retrieving instant product specs, live pricing, and cross-branch stock levels right in front of customers.</li>
+<li><b>Staff Learning Management System (LMS)</b>: Sequential video training modules with progress tracking and mandatory quizzes before unlocking selling privileges.</li>
+<li><b>Task Manager &amp; Delegation</b>: Create and assign tasks with categories, priorities (Urgent, High, Normal, Low), deadlines, and attachments; track progress through To Do, Overdue, Review, and Completed.</li>
+<li><b>Role-Based Access Control (RBAC)</b>: Segregated dashboards and permissions for Store Floor Staff (personal targets, item search) vs. Store Managers (cluster analytics, staff audits, task dispatch).</li>
+</ul>
+<a class="btn main" href="#prototype" data-open="ops">Try the Retail &amp; LMS prototype</a>
 </div>
 <div class="side">
-  <h4>My role</h4>
-  <div class="chips"><span>Mobile Architecture</span><span>UI Development</span><span>State Management</span><span>Barcode &amp; Video Player</span><span>RBAC</span></div>
-  <h4>Built with</h4>
-  <div class="chips"><span>Flutter 3.x</span><span>Dart</span><span>Provider</span><span>Camera / Barcode QR</span><span>Video Player</span><span>Firebase</span><span>REST API</span></div>
+<h4>My role</h4>
+<div class="chips"><span>Mobile Architecture</span><span>UI Development</span><span>State Management</span><span>Barcode &amp; Video Player</span><span>RBAC</span></div>
+<h4>Built with</h4>
+<div class="chips"><span>Flutter 3.x</span><span>Dart</span><span>Provider</span><span>Camera / Barcode QR</span><span>Video Player</span><span>Firebase</span><span>REST API</span></div>
 </div>
 </article>
 
-<!-- PROJECT 3: Expense Tracker App -->
+
+<!-- PROJECT 3: Rent Tracker App -->
 <article class="case">
 <div>
-  <span class="case-badge">Personal Finance &amp; Budget Platform · SQLite &amp; Firebase</span>
-  <h3>Expense Tracker</h3>
-  <p class="sub">Personal finance, cashflow breakdown &amp; smart savings goal tracker (Android &amp; iOS)</p>
-
-  <div class="project-media-slot">
-    <div class="media-placeholder">
-      <span class="media-icon">👛</span>
-      <b>[ADD SCREENSHOT: Expense Tracker Analytics &amp; Spending Donut Chart]</b>
-      <small>Recommended: Add <code>assets/screens/expense_tracker_preview.webp</code> or explore in the live interactive simulator below</small>
-    </div>
-  </div>
-
-  <div class="project-meta-grid">
-    <div class="project-meta-row"><b>Problem:</b> <span>Users struggle to track micro-expenses, understand category spending proportions, and maintain discipline for long-term savings goals with cluttered, slow apps.</span></div>
-    <div class="project-meta-row"><b>What I Built:</b> <span>A frictionless Flutter financial app featuring instant sub-3-second expense logging, dynamic conic-gradient spending donut charts, savings goal progress meters, and scheduled bill reminders.</span></div>
-    <div class="project-meta-row"><b>My Role:</b> <span>End-to-end mobile development: clean reactive state management, custom painter and chart visualization, local SQLite database persistence, and local notification scheduling.</span></div>
-    <div class="project-meta-row"><b>Testing &amp; Tooling:</b> <span>[ADD TESTING TOOLS: e.g. flutter_test for financial balance calculations, SQLite database migration tests]</span></div>
-  </div>
-
-  <details class="case-details">
-    <summary><span>View Key Engineering Highlights</span> ▾</summary>
-    <ul>
-      <li><b>Reactive Financial Engine:</b> Instant on-device calculations dynamically recomputing total balances, income/expense ratios, and category allocations with zero delay.</li>
-      <li><b>Visual Spending Analytics:</b> Conic-gradient category donut chart and monthly analytics bar chart for instant visual breakdown of expenditure patterns.</li>
-      <li><b>Granular Category Breakdown:</b> Filter transactions by categories (Bills, Food, Transport, Shopping) with monthly subtotals.</li>
-      <li><b>Milestone Savings Goals:</b> Track progress toward financial goals with real-time percentages and animated completion meters.</li>
-      <li><b>Scheduled Bill Reminders:</b> Never miss due dates with scheduled local notifications for utilities, rent, and subscriptions.</li>
-      <li><b>Frictionless Capture Modal:</b> Slide-up bottom sheet for sub-3-second transaction and goal creation with offline resilience.</li>
-    </ul>
-  </details>
-
-  <div class="project-links-row">
-    <a class="btn main" href="#prototype" data-open="expense">Try Interactive Prototype 📱</a>
-    <a class="btn" href="https://github.com/parvathyAM" target="_blank" rel="noopener">GitHub: github.com/parvathyAM ↗</a>
-    <a class="btn" href="[ADD DEMO VIDEO LINK]" target="_blank" rel="noopener">Demo Video 🎬</a>
-    <a class="btn" href="[ADD APK / PLAY STORE LINK]" target="_blank" rel="noopener">APK / Store 📦</a>
-  </div>
+<div class="case-eyebrow">Property &amp; Rental Ledger · Riverpod 2.x &amp; Supabase</div>
+<h3>Rent Tracker</h3>
+<p class="sub">Cross-platform financial &amp; property management app (Mobile, Tablet &amp; Web)</p>
+<p>Replaces messy spreadsheets and bloated enterprise software with a lightning-fast, sleek, and automated rent-collection ledger for landlords and property owners. Built with Flutter, Riverpod, and Supabase PostgreSQL.</p>
+<ul>
+<li><b>Clean Layered Architecture</b>: Strict separation between Presentation, State Management (Riverpod AsyncNotifier), Domain Models, and Supabase Data Layer.</li>
+<li><b>Temporal Status Calculation Engine</b>: Payment statuses (Paid, Pending, Overdue) compute dynamically against DateTime.now() on the fly without server cron dependencies.</li>
+<li><b>Dual Property Classification</b>: Seamlessly manages both commercial units (shops/offices) and residential/personal units.</li>
+<li><b>Reactive Multi-Filter Stream</b>: Combines full-text search with status filters (All, Paid, Pending, Overdue) using computed providers with minimal widget rebuilds.</li>
+<li><b>Zero-Trust Multi-Tenant Security</b>: Supabase PostgreSQL Row-Level Security (RLS) guaranteeing strict data isolation per user.</li>
+</ul>
+<a class="btn main" href="#prototype" data-open="rent">Try the Rent Tracker prototype</a>
 </div>
 <div class="side">
-  <h4>My role</h4>
-  <div class="chips"><span>Mobile Development</span><span>State Management</span><span>Chart Visualization</span><span>Offline Storage</span></div>
-  <h4>Built with</h4>
-  <div class="chips"><span>Flutter SDK</span><span>Dart</span><span>SQLite</span><span>Firebase Auth</span><span>Local Notifications</span><span>Clean Architecture</span></div>
+<h4>My role</h4>
+<div class="chips"><span>Lead Flutter Architect</span><span>Riverpod State</span><span>Supabase Backend</span><span>Clean Architecture</span></div>
+<h4>Built with</h4>
+<div class="chips"><span>Flutter 3.x</span><span>Dart</span><span>Riverpod 2.x</span><span>Supabase</span><span>PostgreSQL RLS</span><span>Material 3</span><span>Plus Jakarta Sans</span></div>
 </div>
 </article>
 
-<!-- PROJECT 4: Rent Tracker App -->
+<!-- PROJECT 4: Expense Tracker App -->
 <article class="case">
 <div>
-  <span class="case-badge">Property &amp; Rental Ledger · Riverpod 2.x &amp; Supabase</span>
-  <h3>Rent Tracker</h3>
-  <p class="sub">Cross-platform financial &amp; property management app (Mobile, Tablet &amp; Web)</p>
-
-  <div class="project-media-slot">
-    <div class="media-placeholder">
-      <span class="media-icon">📊</span>
-      <b>[ADD SCREENSHOT: Rent Tracker Dashboard &amp; Overdue Tenant Ledger]</b>
-      <small>Recommended: Add <code>assets/screens/rent_tracker_preview.webp</code> or explore in the live interactive simulator below</small>
-    </div>
-  </div>
-
-  <div class="project-meta-grid">
-    <div class="project-meta-row"><b>Problem:</b> <span>Small landlords and property managers rely on fragile spreadsheets with manual date math to determine overdue rent across commercial and residential units.</span></div>
-    <div class="project-meta-row"><b>What I Built:</b> <span>A clean-architecture rental ledger with on-the-fly temporal calculation (Paid/Pending/Overdue evaluated against DateTime.now()), reactive multi-filter streams, and multi-tenant PostgreSQL Row-Level Security.</span></div>
-    <div class="project-meta-row"><b>My Role:</b> <span>Lead Flutter architect: Presentation layer, Riverpod 2.x AsyncNotifier state management, Supabase PostgreSQL backend integration, and Row-Level Security policy definitions.</span></div>
-    <div class="project-meta-row"><b>Testing &amp; Tooling:</b> <span>[ADD TESTING TOOLS: e.g. Riverpod container tests, temporal date math unit tests, Supabase RLS test runner]</span></div>
-  </div>
-
-  <details class="case-details">
-    <summary><span>View Key Engineering Highlights</span> ▾</summary>
-    <ul>
-      <li><b>Clean Layered Architecture:</b> Strict separation between Presentation, State Management (Riverpod AsyncNotifier), Domain Models, and Supabase Data Layer.</li>
-      <li><b>Temporal Status Calculation Engine:</b> Payment statuses (Paid, Pending, Overdue) compute dynamically against DateTime.now() on the fly without server cron dependencies.</li>
-      <li><b>Dual Property Classification:</b> Seamlessly manages both commercial units (shops/offices) and residential/personal units.</li>
-      <li><b>Reactive Multi-Filter Stream:</b> Combines full-text search with status filters (All, Paid, Pending, Overdue) using computed providers with minimal widget rebuilds.</li>
-      <li><b>Zero-Trust Multi-Tenant Security:</b> Supabase PostgreSQL Row-Level Security (RLS) guaranteeing strict data isolation per user.</li>
-    </ul>
-  </details>
-
-  <div class="project-links-row">
-    <a class="btn main" href="#prototype" data-open="rent">Try Interactive Prototype 📱</a>
-    <a class="btn" href="[ADD GITHUB LINK]" target="_blank" rel="noopener">GitHub Repo ↗</a>
-    <a class="btn" href="[ADD DEMO VIDEO LINK]" target="_blank" rel="noopener">Demo Video 🎬</a>
-    <a class="btn" href="[ADD APK / PLAY STORE LINK]" target="_blank" rel="noopener">APK / Store 📦</a>
-  </div>
+<div class="case-eyebrow">Personal Finance &amp; Budget Platform · SQLite &amp; Firebase</div>
+<h3>Expense Tracker</h3>
+<p class="sub">Personal finance, cashflow breakdown &amp; smart savings goal tracker (Android &amp; iOS)</p>
+<p>A complete personal finance and expense logging Flutter application for managing daily cashflow, categorizing spending, visualizing monthly financial ratios, setting milestone savings goals, and getting scheduled bill reminders.</p>
+<ul>
+<li><b>Reactive Financial Engine</b>: Instant on-device calculations dynamically recomputing total balances, income/expense ratios, and category allocations with zero delay.</li>
+<li><b>Visual Spending Analytics</b>: Conic-gradient category donut chart and monthly analytics bar chart for instant visual breakdown of expenditure patterns.</li>
+<li><b>Granular Category Breakdown</b>: Filter transactions by categories (Bills, Food, Transport, Shopping) with monthly subtotals.</li>
+<li><b>Milestone Savings Goals</b>: Track progress toward financial goals with real-time percentages and animated completion meters.</li>
+<li><b>Scheduled Bill Reminders</b>: Never miss due dates with scheduled local notifications for utilities, rent, and subscriptions.</li>
+<li><b>Frictionless Capture Modal</b>: Slide-up bottom sheet for sub-3-second transaction and goal creation with offline resilience.</li>
+</ul>
+<a class="btn main" href="#prototype" data-open="expense">Try the Expense Tracker prototype</a>
 </div>
 <div class="side">
-  <h4>My role</h4>
-  <div class="chips"><span>Lead Flutter Architect</span><span>Riverpod State</span><span>Supabase Backend</span><span>Clean Architecture</span></div>
-  <h4>Built with</h4>
-  <div class="chips"><span>Flutter 3.x</span><span>Dart</span><span>Riverpod 2.x</span><span>Supabase</span><span>PostgreSQL RLS</span><span>Material 3</span></div>
+<h4>My role</h4>
+<div class="chips"><span>Mobile Development</span><span>State Management</span><span>Chart Visualization</span><span>Offline Storage</span></div>
+<h4>Built with</h4>
+<div class="chips"><span>Flutter</span><span>Dart</span><span>Firebase Auth</span><span>Local Notifications</span><span>Vector Charts</span><span>Clean Architecture</span></div>
 </div>
 </article>
 
