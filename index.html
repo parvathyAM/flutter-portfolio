@@ -202,8 +202,8 @@ body:before{filter:blur(100px);opacity:.22;background:radial-gradient(circle at 
 .btn{border-color:var(--line);background:color-mix(in srgb,var(--surface) 70%,transparent)}
 .btn.main{border-color:var(--blue);background:var(--blue)}
 h1{font-size:clamp(40px,6vw,62px);font-weight:700;letter-spacing:-.03em}
-.role{font-size:19px;font-weight:600}
-.hero .wrap{grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:36px 48px;align-items:center}
+.hero-metrics-full{grid-column:1/-1;width:100%;margin-top:20px}
 .stackrow{margin-top:28px}
 .chips span{background:var(--tint);color:var(--blue)}
 
@@ -1661,54 +1661,22 @@ nav a.nav-active::after {
 </div></nav>
 
 <header class="hero"><div class="wrap">
-<div>
+<div class="hero-content">
 <h1>Parvathy A M</h1>
 <p class="role"><span id="typing-role" class="typing-role">Flutter Developer</span><span class="cursor"></span></p>
 <div class="target-role-badge">🎯 Seeking Junior / Mid-Level Flutter Developer Roles · Kochi, Bangalore &amp; Remote</div>
 <p class="lead">I build clean, responsive, and robust cross-platform mobile apps for Android &amp; iOS using Flutter and Dart. 1+ year of production experience shipping business CRM, in-store operations, and financial platforms with clean state management and REST APIs.</p>
-<div class="btns">
-  <a class="btn main" href="#work">View My Work</a>
-  <a class="btn" href="[ADD RESUME LINK]" target="_blank" rel="noopener">Download Resume 📄</a>
-  <a class="btn" href="#contact">Get in Touch</a>
+<div class="hero-actions">
+  <div class="btns">
+    <a class="btn main" href="#work">View My Work</a>
+    <a class="btn" href="mailto:parvathy2000.20@gmail.com?subject=Resume%20Request%20-%20Parvathy%20A%20M">Download Resume 📄</a>
+  </div>
+  <div class="btns" style="margin-top: 10px;">
+    <a class="btn" href="#contact">Get in Touch</a>
+  </div>
 </div>
-<div class="chips stackrow">
-  <span>Flutter SDK</span><span>Dart</span><span>Riverpod</span><span>Provider</span><span>REST APIs</span><span>SQLite</span><span>Firebase Auth &amp; FCM</span>
 </div>
 
-<div class="hero-metrics">
-  <div class="metric-tile">
-    <div class="metric-num" data-target="1">1+</div>
-    <div class="metric-label">Year of Enterprise &amp; Trainee Flutter Experience</div>
-  </div>
-  <div class="metric-tile">
-    <div class="metric-num" data-target="3">3</div>
-    <div class="metric-label">Production Apps (CRM, Retail LMS &amp; Financial Ledger)</div>
-  </div>
-  <div class="metric-tile">
-    <div class="metric-num" data-target="4">4</div>
-    <div class="metric-label">Live Interactive Prototypes in Simulator Below</div>
-  </div>
-  <div class="metric-tile">
-    <div class="metric-num" data-target="100">100%</div>
-    <div class="metric-label">Cross-Platform Android &amp; iOS Codebase</div>
-  </div>
-</div>
-</div>
-  <div class="metric-tile">
-    <div class="metric-num" data-target="16">16+</div>
-    <div class="metric-label">Interactive Production Screens &amp; Views</div>
-  </div>
-  <div class="metric-tile">
-    <div class="metric-num" data-target="99">99.9%</div>
-    <div class="metric-label">Crash-Free Riverpod &amp; Provider Sessions</div>
-  </div>
-  <div class="metric-tile">
-    <div class="metric-num" data-target="100">&lt; 100ms</div>
-    <div class="metric-label">Realtime Supabase PostgreSQL Queries</div>
-  </div>
-</div>
-
-</div>
 <div class="hero-code-card" aria-label="Flutter Developer Profile">
   <div class="hero-card-header">
     <div class="hero-card-dots">
@@ -1727,7 +1695,7 @@ nav a.nav-active::after {
     <div style="padding-left:14px"><span class="code-prop">name</span>: <span class="code-str">'Parvathy A M'</span>,</div>
     <div style="padding-left:14px"><span class="code-prop">role</span>: <span class="code-str">'Flutter Developer'</span>,</div>
     <div style="padding-left:14px"><span class="code-prop">company</span>: <span class="code-str">'Brynex'</span>,</div>
-    <div style="padding-left:14px"><span class="code-prop">experience</span>: <span class="code-str">'1+ Year (Rootments &amp; Luminar)'</span>,</div>
+    <div style="padding-left:14px"><span class="code-prop">experience</span>: <span class="code-str">'1+ Year (Brynex &amp; Luminar)'</span>,</div>
     <div style="padding-left:14px"><span class="code-prop">platforms</span>: [<span class="code-str">'Android'</span>, <span class="code-str">'iOS'</span>],</div>
     <div style="padding-left:14px"><span class="code-prop">coreStack</span>: [</div>
     <div style="padding-left:28px"><span class="code-cls">FlutterSDK</span>, <span class="code-cls">Dart</span>, <span class="code-cls">Riverpod</span>,</div>
@@ -1739,6 +1707,25 @@ nav a.nav-active::after {
   <div class="hero-card-footer">
     <span>⚡ 60 FPS Smooth UI</span>
     <span>📱 4 Interactive Prototypes Below</span>
+  </div>
+</div>
+
+<div class="hero-metrics hero-metrics-full">
+  <div class="metric-tile">
+    <div class="metric-num" data-target="1">1+</div>
+    <div class="metric-label">Year of Dedicated Flutter &amp; Dart Experience</div>
+  </div>
+  <div class="metric-tile">
+    <div class="metric-num" data-target="16">16+</div>
+    <div class="metric-label">Interactive Production Screens &amp; Views</div>
+  </div>
+  <div class="metric-tile">
+    <div class="metric-num" data-target="99">99.9%</div>
+    <div class="metric-label">Crash-Free Riverpod &amp; Provider Sessions</div>
+  </div>
+  <div class="metric-tile">
+    <div class="metric-num" data-target="100">&lt; 100ms</div>
+    <div class="metric-label">Realtime Supabase PostgreSQL Queries</div>
   </div>
 </div>
 </div></header>
