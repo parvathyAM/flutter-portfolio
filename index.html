@@ -3,9 +3,64 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Parvathy A M · Flutter Developer</title>
+<title>Parvathy A M · Flutter Developer · Kochi, Kerala</title>
+<meta name="description" content="Portfolio of Parvathy A M, Flutter Developer based in Kochi, Kerala. 1+ year experience building production cross-platform Android &amp; iOS apps with Flutter, Dart, Riverpod, and REST APIs.">
+<meta name="keywords" content="Flutter Developer, Dart, Android, iOS, Mobile Developer, Kochi, Kerala, Riverpod, Provider, SQLite, Firebase">
+<meta name="author" content="Parvathy A M">
+
+<!-- Open Graph / Facebook / LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://parvathyAM.github.io/flutter-portfolio/">
+<meta property="og:title" content="Parvathy A M · Flutter Developer · Kochi, Kerala">
+<meta property="og:description" content="1+ year of production experience shipping business CRM, operations, and financial platforms with Flutter, Dart, and clean state management.">
+<meta property="og:image" content="[ADD SOCIAL PREVIEW IMAGE LINK]">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://parvathyAM.github.io/flutter-portfolio/">
+<meta name="twitter:title" content="Parvathy A M · Flutter Developer · Kochi, Kerala">
+<meta name="twitter:description" content="1+ year of production experience shipping cross-platform Android &amp; iOS apps with Flutter and Dart.">
+<meta name="twitter:image" content="[ADD SOCIAL PREVIEW IMAGE LINK]">
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💙</text></svg>">
+
+<!-- Fonts & Preconnect -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- JSON-LD Structured Data (Person Schema) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Parvathy A M",
+  "jobTitle": "Flutter Developer",
+  "url": "https://parvathyAM.github.io/flutter-portfolio/",
+  "sameAs": [
+    "https://github.com/parvathyAM",
+    "[ADD LINKEDIN LINK]"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kochi",
+    "addressRegion": "Kerala",
+    "addressCountry": "India"
+  },
+  "knowsAbout": [
+    "Flutter",
+    "Dart",
+    "Android Development",
+    "iOS Development",
+    "Riverpod",
+    "Provider",
+    "REST APIs",
+    "SQLite",
+    "Firebase"
+  ]
+}
+</script>
 <style>
 :root{--bg:#F6F8FB;--surface:#fff;--ink:#12202F;--muted:#5A6B7D;--line:#DCE3EC;--blue:#0B63CE;--sky:#54C5F8;--mint:#12A594;--tint:#E8F3FE;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -1335,9 +1390,199 @@ select.exp-field { appearance: none; }
 .exp-toast { position: absolute; left: 50%; top: 40px; transform: translate(-50%, -20px); background: var(--e-mint); color: #0b2e2a; font-size: 11.5px; font-weight: 700; padding: 7px 12px; border-radius: 99px; z-index: 12; opacity: 0; transition: .25s; pointer-events: none; }
 .exp-toast.show { opacity: 1; transform: translate(-50%, 0); }
 
+
+/* Accessibility: Skip to Content */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  background: var(--blue);
+  color: #fff;
+  padding: 10px 18px;
+  z-index: 1000;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 16px;
+}
+
+/* Nav Active Scrollspy */
+nav a.nav-active {
+  color: var(--blue) !important;
+  font-weight: 700;
+  position: relative;
+}
+nav a.nav-active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--blue);
+  border-radius: 2px;
+}
+
+/* Nav Controls */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-sound-btn {
+  background: none;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s;
+}
+.nav-sound-btn:hover {
+  border-color: var(--blue);
+  color: var(--ink);
+}
+.nav-sound-btn[aria-pressed="true"] {
+  background: var(--tint);
+  border-color: var(--blue);
+  color: var(--blue);
+  font-weight: 600;
+}
+
+/* Target Role Badge */
+.target-role-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 14px 0 20px;
+  padding: 8px 16px;
+  border-radius: 99px;
+  background: var(--tint);
+  color: var(--blue);
+  font-size: 13.5px;
+  font-weight: 600;
+  border: 1px solid color-mix(in srgb, var(--blue) 25%, transparent);
+}
+
+/* Project Cards Consistency */
+.case-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 6px;
+}
+.project-media-slot {
+  background: var(--bg);
+  border: 1px dashed var(--line);
+  border-radius: 14px;
+  padding: 22px 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.media-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.media-icon { font-size: 26px; }
+.media-placeholder b { font-size: 13px; color: var(--ink); }
+.media-placeholder small { font-size: 11.5px; color: var(--muted); }
+
+.project-meta-grid {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.project-meta-row {
+  font-size: 14.5px;
+  line-height: 1.55;
+}
+.project-meta-row b {
+  color: var(--ink);
+  font-weight: 600;
+}
+.project-meta-row span {
+  color: var(--muted);
+}
+
+.case-details {
+  margin: 16px 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 14px;
+  background: color-mix(in srgb, var(--surface) 50%, transparent);
+}
+.case-details summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13.5px;
+  color: var(--blue);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.case-details summary::-webkit-details-marker { display: none; }
+.case-details[open] summary { margin-bottom: 12px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.case-details ul { margin: 0; padding-left: 20px; }
+
+.project-links-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+  align-items: center;
+}
+.project-links-row .btn {
+  font-size: 13px;
+  padding: 8px 16px;
+}
+.link-badge {
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 99px;
+  background: color-mix(in srgb, var(--muted) 15%, transparent);
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.testing-line {
+  font-size: 12.5px;
+  color: var(--muted);
+  background: var(--tint);
+  padding: 6px 12px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+.testing-line b { color: var(--blue); }
+
+.looking-box {
+  background: var(--tint);
+  border-left: 3px solid var(--blue);
+  padding: 14px 18px;
+  border-radius: 0 12px 12px 0;
+  font-size: 14px;
+  margin-top: 18px;
+  color: var(--ink);
+}
+.looking-box b { color: var(--blue); }
+
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <div id="scroll-progress"></div>
 <nav><div class="wrap"><b>Parvathy A M</b><span class="avail-badge"><span class="avail-dot"></span> Available for Hire</span>
 <div class="nav-right">
@@ -1353,15 +1598,36 @@ select.exp-field { appearance: none; }
 <div>
 <h1>Parvathy A M</h1>
 <p class="role"><span id="typing-role" class="typing-role">Flutter Developer</span><span class="cursor"></span></p>
-<p class="lead">I build clean, fast mobile apps with Flutter and Dart, from the first screen to the last API call.</p>
-<div class="btns"><a class="btn main" href="#work">View my work</a><a class="btn" href="#contact">Get in touch</a></div>
-<div class="chips stackrow"><span>Flutter</span><span>Dart</span><span>Riverpod</span><span>Provider</span><span>Supabase</span><span>Firebase</span><span>REST APIs</span></div>
+<div class="target-role-badge">🎯 Seeking Junior / Mid-Level Flutter Developer Roles · Kochi, Bangalore &amp; Remote</div>
+<p class="lead">I build clean, responsive, and robust cross-platform mobile apps for Android &amp; iOS using Flutter and Dart. 1+ year of production experience shipping business CRM, in-store operations, and financial platforms with clean state management and REST APIs.</p>
+<div class="btns">
+  <a class="btn main" href="#work">View My Work</a>
+  <a class="btn" href="[ADD RESUME LINK]" target="_blank" rel="noopener">Download Resume 📄</a>
+  <a class="btn" href="#contact">Get in Touch</a>
+</div>
+<div class="chips stackrow">
+  <span>Flutter SDK</span><span>Dart</span><span>Riverpod</span><span>Provider</span><span>REST APIs</span><span>SQLite</span><span>Firebase Auth &amp; FCM</span>
+</div>
 
 <div class="hero-metrics">
   <div class="metric-tile">
     <div class="metric-num" data-target="1">1+</div>
-    <div class="metric-label">Year of Dedicated Flutter &amp; Dart Experience</div>
+    <div class="metric-label">Year of Enterprise &amp; Trainee Flutter Experience</div>
   </div>
+  <div class="metric-tile">
+    <div class="metric-num" data-target="3">3</div>
+    <div class="metric-label">Production Apps (CRM, Retail LMS &amp; Financial Ledger)</div>
+  </div>
+  <div class="metric-tile">
+    <div class="metric-num" data-target="4">4</div>
+    <div class="metric-label">Live Interactive Prototypes in Simulator Below</div>
+  </div>
+  <div class="metric-tile">
+    <div class="metric-num" data-target="100">100%</div>
+    <div class="metric-label">Cross-Platform Android &amp; iOS Codebase</div>
+  </div>
+</div>
+</div>
   <div class="metric-tile">
     <div class="metric-num" data-target="16">16+</div>
     <div class="metric-label">Interactive Production Screens &amp; Views</div>
@@ -1411,12 +1677,17 @@ select.exp-field { appearance: none; }
 </div>
 </div></header>
 
+<main id="main-content">
+
 <section id="about" class="reveal"><div class="wrap">
 <h2>About me</h2>
 <div class="about">
 <div>
 <p>I'm a Flutter developer who enjoys turning business workflows into apps that people actually like using. My focus is a tidy interface, predictable state, and reliable integrations behind it.</p>
 <p>I work on UI development, state management and API integration, and I care about the small details that make an app feel finished.</p>
+<div class="looking-box">
+  <b>What I'm looking for:</b> Full-time Junior or Mid-level Flutter Developer roles building business, commercial, or consumer mobile applications. Open to on-site roles in Kochi or Bangalore, as well as remote opportunities. Available to join immediately.
+</div>
 </div>
 <ul class="facts">
 <li><span>Role</span><b>Flutter Developer</b></li>
@@ -1449,94 +1720,195 @@ select.exp-field { appearance: none; }
 <!-- PROJECT 1: Telecaller CRM App -->
 <article class="case">
 <div>
-<h3>Telecaller CRM App</h3>
-<p class="sub">Dedicated Flutter CRM &amp; call-management app for retail telecalling sales teams</p>
-<p>A specialized mobile CRM built to manage the complete telecalling sales cycle across store branches: outbound cold calls, inbound customer inquiries, verified lead disposition, follow-up queues, and customer complaints.</p>
-<ul>
-<li><b>Verified Call Tracking</b>: Automatic timer and verification confirming a call occurred before allowing lead disposition to be saved.</li>
-<li><b>Lead Segmentation Pipeline</b>: Ingests and organizes leads by category (JustDial, direct enquiry, booking confirmation, customer feedback, booked, and lost sales).</li>
-<li><b>Follow-Up Queue &amp; Push Reminders</b>: Automated sorting into Today, Upcoming, and Overdue lists with FCM push notifications.</li>
-<li><b>Unified Omnichannel Chat</b>: Single inbox integrating customer messages from WhatsApp, Instagram, and Facebook Messenger.</li>
-<li><b>Performance &amp; Call Analytics</b>: Detailed breakdown of call counts, connection rates, talk durations, and conversion by store branch.</li>
-</ul>
-<a class="btn main" href="#prototype" data-open="tele">Try the Telecaller prototype</a>
+  <span class="case-badge">Production Business App · Brynex</span>
+  <h3>Telecaller CRM App</h3>
+  <p class="sub">Dedicated Flutter CRM &amp; call-management app for retail telecalling sales teams (Android &amp; iOS)</p>
+
+  <div class="project-media-slot">
+    <div class="media-placeholder">
+      <span class="media-icon">📱</span>
+      <b>[ADD SCREENSHOT: Telecaller CRM App Lead Pipeline &amp; Verified Calling]</b>
+      <small>Recommended: Add <code>assets/screens/telecaller_preview.webp</code> or explore in the live interactive simulator below</small>
+    </div>
+  </div>
+
+  <div class="project-meta-grid">
+    <div class="project-meta-row"><b>Problem:</b> <span>Retail showroom telecallers lost sales leads due to unverified call logging, fragmented customer follow-up notes on paper, and scattered messaging across multiple channels.</span></div>
+    <div class="project-meta-row"><b>What I Built:</b> <span>A unified mobile CRM featuring mandatory verified call-timer tracking before lead disposition, automated Today/Upcoming/Overdue follow-up queues with push notifications, and lead stage filtering.</span></div>
+    <div class="project-meta-row"><b>My Role:</b> <span>Flutter mobile engineering from scratch: UI screen development, Provider state management, REST API integration, call log verification, and FCM push notifications.</span></div>
+    <div class="project-meta-row"><b>Testing &amp; Tooling:</b> <span>[ADD TESTING TOOLS: e.g. flutter_test unit &amp; widget tests, Mockito for REST API mocking, Postman, Android Studio Profiler]</span></div>
+  </div>
+
+  <details class="case-details">
+    <summary><span>View Key Engineering Highlights</span> ▾</summary>
+    <ul>
+      <li><b>Verified Call Tracking:</b> Enforces call duration verification before lead disposition can be saved, eliminating unverified reports.</li>
+      <li><b>Lead Segmentation Pipeline:</b> Organizes inquiries across Direct, JustDial, Walk-in, and Booking stages with real-time sync.</li>
+      <li><b>Follow-Up Queue &amp; Push Reminders:</b> Automated triage of urgent follow-ups with Firebase Cloud Messaging (FCM).</li>
+      <li><b>Unified Omnichannel Messaging:</b> Consolidates customer chats across WhatsApp, Instagram, and Facebook Messenger into one inbox.</li>
+      <li><b>Branch Performance Analytics:</b> Real-time KPI dashboards calculating connection rates and talk time across store branches.</li>
+    </ul>
+  </details>
+
+  <div class="project-links-row">
+    <a class="btn main" href="#prototype" data-open="tele">Try Interactive Prototype 📱</a>
+    <span class="link-badge">🔒 Private Enterprise Project (Brynex)</span>
+    <a class="btn" href="[ADD GITHUB LINK]" target="_blank" rel="noopener">GitHub Repo ↗</a>
+    <a class="btn" href="[ADD DEMO VIDEO LINK]" target="_blank" rel="noopener">Demo Video 🎬</a>
+    <a class="btn" href="[ADD APK / PLAY STORE LINK]" target="_blank" rel="noopener">APK / Store 📦</a>
+  </div>
 </div>
 <div class="side">
-<h4>My role</h4>
-<div class="chips"><span>UI / UX Engineering</span><span>State Management</span><span>REST API Integration</span><span>Call Verification</span></div>
-<h4>Built with</h4>
-<div class="chips"><span>Flutter</span><span>Dart</span><span>Provider</span><span>REST API</span><span>Firebase FCM</span><span>JWT Auth</span></div>
+  <h4>My role</h4>
+  <div class="chips"><span>UI / UX Engineering</span><span>State Management</span><span>REST API Integration</span><span>Call Verification</span></div>
+  <h4>Built with</h4>
+  <div class="chips"><span>Flutter SDK</span><span>Dart</span><span>Provider</span><span>REST API</span><span>Firebase FCM</span><span>JWT Auth</span></div>
 </div>
 </article>
 
 <!-- PROJECT 2: Retail Walk-in, Operations & Staff LMS App -->
 <article class="case">
 <div>
-<h3>Retail Walk-in, Operations &amp; Staff LMS App</h3>
-<p class="sub">In-store showroom foot-traffic tracking, barcode inventory lookup &amp; employee training platform</p>
-<p>An enterprise in-store operations app built for showroom floor associates and store managers at <a href="https://www.brynex.com" target="_blank" rel="noopener" style="color:var(--blue)">Brynex</a>. It digitizes customer showroom visits, enables instant camera/barcode price and inventory checks, manages daily operational tasks, and provides video-based staff upskilling courses.</p>
-<ul>
-<li><b>Showroom Walk-in Engine</b>: Fast digital logging of visitor counts, interest categories, budget tiers, and consultation notes across store clusters.</li>
-<li><b>In-Store Barcode Item Checker</b>: Built-in camera and barcode scanner retrieving instant product specs, live pricing, and cross-branch stock levels right in front of customers.</li>
-<li><b>Staff Learning Management System (LMS)</b>: Sequential video training modules with progress tracking and mandatory quizzes before unlocking selling privileges.</li>
-<li><b>Task Manager &amp; Delegation</b>: Create and assign tasks with categories, priorities (Urgent, High, Normal, Low), deadlines, and attachments; track progress through To Do, Overdue, Review, and Completed.</li>
-<li><b>Role-Based Access Control (RBAC)</b>: Segregated dashboards and permissions for Store Floor Staff (personal targets, item search) vs. Store Managers (cluster analytics, staff audits, task dispatch).</li>
-</ul>
-<a class="btn main" href="#prototype" data-open="ops">Try the Retail &amp; LMS prototype</a>
+  <span class="case-badge">Production Business App · Brynex</span>
+  <h3>Retail Walk-in, Operations &amp; Staff LMS App</h3>
+  <p class="sub">In-store showroom foot-traffic tracking, barcode inventory lookup &amp; employee training platform</p>
+
+  <div class="project-media-slot">
+    <div class="media-placeholder">
+      <span class="media-icon">🏪</span>
+      <b>[ADD SCREENSHOT: Retail Walk-in Logging &amp; Barcode Stock Scanner]</b>
+      <small>Recommended: Add <code>assets/screens/retail_lms_preview.webp</code> or explore in the live interactive simulator below</small>
+    </div>
+  </div>
+
+  <div class="project-meta-grid">
+    <div class="project-meta-row"><b>Problem:</b> <span>Showroom sales teams lacked real-time stock lookup across branches, visitor walk-in logs were lost on paper, and store associates lacked standardized video training.</span></div>
+    <div class="project-meta-row"><b>What I Built:</b> <span>An enterprise in-store mobile app featuring instant camera barcode price &amp; stock lookup, digital walk-in visitor logging, a video-based staff learning LMS with quizzes, and tiered role-based task delegation.</span></div>
+    <div class="project-meta-row"><b>My Role:</b> <span>Mobile architecture, responsive UI development, Provider state management, camera barcode scanner integration, video player controller, and role-based access control (RBAC).</span></div>
+    <div class="project-meta-row"><b>Testing &amp; Tooling:</b> <span>[ADD TESTING TOOLS: e.g. flutter_test, Camera/Barcode mocking, integration_test, VS Code Flutter DevTools]</span></div>
+  </div>
+
+  <details class="case-details">
+    <summary><span>View Key Engineering Highlights</span> ▾</summary>
+    <ul>
+      <li><b>Showroom Walk-in Engine:</b> Fast digital logging of visitor counts, interest categories, budget tiers, and consultation notes across store clusters.</li>
+      <li><b>In-Store Barcode Item Checker:</b> Built-in camera and barcode scanner retrieving instant product specs, live pricing, and cross-branch stock levels right in front of customers.</li>
+      <li><b>Staff Learning Management System (LMS):</b> Sequential video training modules with progress tracking and mandatory quizzes before unlocking selling privileges.</li>
+      <li><b>Task Manager &amp; Delegation:</b> Create and assign tasks with categories, priorities (Urgent, High, Normal, Low), deadlines, and attachments; track progress through To Do, Overdue, Review, and Completed.</li>
+      <li><b>Role-Based Access Control (RBAC):</b> Segregated dashboards and permissions for Store Floor Staff (personal targets, item search) vs. Store Managers (cluster analytics, staff audits, task dispatch).</li>
+    </ul>
+  </details>
+
+  <div class="project-links-row">
+    <a class="btn main" href="#prototype" data-open="ops">Try Interactive Prototype 📱</a>
+    <span class="link-badge">🔒 Private Enterprise Project (Brynex)</span>
+    <a class="btn" href="[ADD GITHUB LINK]" target="_blank" rel="noopener">GitHub Repo ↗</a>
+    <a class="btn" href="[ADD DEMO VIDEO LINK]" target="_blank" rel="noopener">Demo Video 🎬</a>
+    <a class="btn" href="[ADD APK / PLAY STORE LINK]" target="_blank" rel="noopener">APK / Store 📦</a>
+  </div>
 </div>
 <div class="side">
-<h4>My role</h4>
-<div class="chips"><span>Mobile Architecture</span><span>UI Development</span><span>State Management</span><span>Barcode &amp; Video Player</span><span>RBAC</span></div>
-<h4>Built with</h4>
-<div class="chips"><span>Flutter 3.x</span><span>Dart</span><span>Provider</span><span>Camera / Barcode QR</span><span>Video Player</span><span>Firebase</span><span>REST API</span></div>
+  <h4>My role</h4>
+  <div class="chips"><span>Mobile Architecture</span><span>UI Development</span><span>State Management</span><span>Barcode &amp; Video Player</span><span>RBAC</span></div>
+  <h4>Built with</h4>
+  <div class="chips"><span>Flutter 3.x</span><span>Dart</span><span>Provider</span><span>Camera / Barcode QR</span><span>Video Player</span><span>Firebase</span><span>REST API</span></div>
 </div>
 </article>
 
-
-<!-- PROJECT 3: Rent Tracker App -->
+<!-- PROJECT 3: Expense Tracker App -->
 <article class="case">
 <div>
-<h3>Rent Tracker</h3>
-<p class="sub">Cross-platform financial &amp; property management app (Mobile, Tablet &amp; Web)</p>
-<p>Replaces messy spreadsheets and bloated enterprise software with a lightning-fast, sleek, and automated rent-collection ledger for landlords and property owners. Built with Flutter, Riverpod, and Supabase PostgreSQL.</p>
-<ul>
-<li><b>Clean Layered Architecture</b>: Strict separation between Presentation, State Management (Riverpod AsyncNotifier), Domain Models, and Supabase Data Layer.</li>
-<li><b>Temporal Status Calculation Engine</b>: Payment statuses (Paid, Pending, Overdue) compute dynamically against DateTime.now() on the fly without server cron dependencies.</li>
-<li><b>Dual Property Classification</b>: Seamlessly manages both commercial units (shops/offices) and residential/personal units.</li>
-<li><b>Reactive Multi-Filter Stream</b>: Combines full-text search with status filters (All, Paid, Pending, Overdue) using computed providers with minimal widget rebuilds.</li>
-<li><b>Zero-Trust Multi-Tenant Security</b>: Supabase PostgreSQL Row-Level Security (RLS) guaranteeing strict data isolation per user.</li>
-</ul>
-<a class="btn main" href="#prototype" data-open="rent">Try the Rent Tracker prototype</a>
+  <span class="case-badge">Personal Finance &amp; Budget Platform · SQLite &amp; Firebase</span>
+  <h3>Expense Tracker</h3>
+  <p class="sub">Personal finance, cashflow breakdown &amp; smart savings goal tracker (Android &amp; iOS)</p>
+
+  <div class="project-media-slot">
+    <div class="media-placeholder">
+      <span class="media-icon">👛</span>
+      <b>[ADD SCREENSHOT: Expense Tracker Analytics &amp; Spending Donut Chart]</b>
+      <small>Recommended: Add <code>assets/screens/expense_tracker_preview.webp</code> or explore in the live interactive simulator below</small>
+    </div>
+  </div>
+
+  <div class="project-meta-grid">
+    <div class="project-meta-row"><b>Problem:</b> <span>Users struggle to track micro-expenses, understand category spending proportions, and maintain discipline for long-term savings goals with cluttered, slow apps.</span></div>
+    <div class="project-meta-row"><b>What I Built:</b> <span>A frictionless Flutter financial app featuring instant sub-3-second expense logging, dynamic conic-gradient spending donut charts, savings goal progress meters, and scheduled bill reminders.</span></div>
+    <div class="project-meta-row"><b>My Role:</b> <span>End-to-end mobile development: clean reactive state management, custom painter and chart visualization, local SQLite database persistence, and local notification scheduling.</span></div>
+    <div class="project-meta-row"><b>Testing &amp; Tooling:</b> <span>[ADD TESTING TOOLS: e.g. flutter_test for financial balance calculations, SQLite database migration tests]</span></div>
+  </div>
+
+  <details class="case-details">
+    <summary><span>View Key Engineering Highlights</span> ▾</summary>
+    <ul>
+      <li><b>Reactive Financial Engine:</b> Instant on-device calculations dynamically recomputing total balances, income/expense ratios, and category allocations with zero delay.</li>
+      <li><b>Visual Spending Analytics:</b> Conic-gradient category donut chart and monthly analytics bar chart for instant visual breakdown of expenditure patterns.</li>
+      <li><b>Granular Category Breakdown:</b> Filter transactions by categories (Bills, Food, Transport, Shopping) with monthly subtotals.</li>
+      <li><b>Milestone Savings Goals:</b> Track progress toward financial goals with real-time percentages and animated completion meters.</li>
+      <li><b>Scheduled Bill Reminders:</b> Never miss due dates with scheduled local notifications for utilities, rent, and subscriptions.</li>
+      <li><b>Frictionless Capture Modal:</b> Slide-up bottom sheet for sub-3-second transaction and goal creation with offline resilience.</li>
+    </ul>
+  </details>
+
+  <div class="project-links-row">
+    <a class="btn main" href="#prototype" data-open="expense">Try Interactive Prototype 📱</a>
+    <a class="btn" href="https://github.com/parvathyAM" target="_blank" rel="noopener">GitHub: github.com/parvathyAM ↗</a>
+    <a class="btn" href="[ADD DEMO VIDEO LINK]" target="_blank" rel="noopener">Demo Video 🎬</a>
+    <a class="btn" href="[ADD APK / PLAY STORE LINK]" target="_blank" rel="noopener">APK / Store 📦</a>
+  </div>
 </div>
 <div class="side">
-<h4>My role</h4>
-<div class="chips"><span>Lead Flutter Architect</span><span>Riverpod State</span><span>Supabase Backend</span><span>Clean Architecture</span></div>
-<h4>Built with</h4>
-<div class="chips"><span>Flutter 3.x</span><span>Dart</span><span>Riverpod 2.x</span><span>Supabase</span><span>PostgreSQL RLS</span><span>Material 3</span><span>Plus Jakarta Sans</span></div>
+  <h4>My role</h4>
+  <div class="chips"><span>Mobile Development</span><span>State Management</span><span>Chart Visualization</span><span>Offline Storage</span></div>
+  <h4>Built with</h4>
+  <div class="chips"><span>Flutter SDK</span><span>Dart</span><span>SQLite</span><span>Firebase Auth</span><span>Local Notifications</span><span>Clean Architecture</span></div>
 </div>
 </article>
 
-<!-- PROJECT 4: Expense Tracker App -->
+<!-- PROJECT 4: Rent Tracker App -->
 <article class="case">
 <div>
-<h3>Expense Tracker</h3>
-<p class="sub">Personal finance, cashflow breakdown &amp; smart savings goal tracker (Mobile)</p>
-<p>A complete personal finance and expense logging Flutter application for managing daily cashflow, categorizing spending, visualizing monthly financial ratios, setting milestone savings goals, and getting scheduled bill reminders.</p>
-<ul>
-<li><b>Reactive Financial Engine</b>: Instant on-device calculations dynamically recomputing total balances, income/expense ratios, and category allocations with zero delay.</li>
-<li><b>Visual Spending Analytics</b>: Conic-gradient category donut chart and monthly analytics bar chart for instant visual breakdown of expenditure patterns.</li>
-<li><b>Granular Category Breakdown</b>: Filter transactions by categories (Bills, Food, Transport, Shopping) with monthly subtotals.</li>
-<li><b>Milestone Savings Goals</b>: Track progress toward financial goals with real-time percentages and animated completion meters.</li>
-<li><b>Scheduled Bill Reminders</b>: Never miss due dates with scheduled local notifications for utilities, rent, and subscriptions.</li>
-<li><b>Frictionless Capture Modal</b>: Slide-up bottom sheet for sub-3-second transaction and goal creation with offline resilience.</li>
-</ul>
-<a class="btn main" href="#prototype" data-open="expense">Try the Expense Tracker prototype</a>
+  <span class="case-badge">Property &amp; Rental Ledger · Riverpod 2.x &amp; Supabase</span>
+  <h3>Rent Tracker</h3>
+  <p class="sub">Cross-platform financial &amp; property management app (Mobile, Tablet &amp; Web)</p>
+
+  <div class="project-media-slot">
+    <div class="media-placeholder">
+      <span class="media-icon">📊</span>
+      <b>[ADD SCREENSHOT: Rent Tracker Dashboard &amp; Overdue Tenant Ledger]</b>
+      <small>Recommended: Add <code>assets/screens/rent_tracker_preview.webp</code> or explore in the live interactive simulator below</small>
+    </div>
+  </div>
+
+  <div class="project-meta-grid">
+    <div class="project-meta-row"><b>Problem:</b> <span>Small landlords and property managers rely on fragile spreadsheets with manual date math to determine overdue rent across commercial and residential units.</span></div>
+    <div class="project-meta-row"><b>What I Built:</b> <span>A clean-architecture rental ledger with on-the-fly temporal calculation (Paid/Pending/Overdue evaluated against DateTime.now()), reactive multi-filter streams, and multi-tenant PostgreSQL Row-Level Security.</span></div>
+    <div class="project-meta-row"><b>My Role:</b> <span>Lead Flutter architect: Presentation layer, Riverpod 2.x AsyncNotifier state management, Supabase PostgreSQL backend integration, and Row-Level Security policy definitions.</span></div>
+    <div class="project-meta-row"><b>Testing &amp; Tooling:</b> <span>[ADD TESTING TOOLS: e.g. Riverpod container tests, temporal date math unit tests, Supabase RLS test runner]</span></div>
+  </div>
+
+  <details class="case-details">
+    <summary><span>View Key Engineering Highlights</span> ▾</summary>
+    <ul>
+      <li><b>Clean Layered Architecture:</b> Strict separation between Presentation, State Management (Riverpod AsyncNotifier), Domain Models, and Supabase Data Layer.</li>
+      <li><b>Temporal Status Calculation Engine:</b> Payment statuses (Paid, Pending, Overdue) compute dynamically against DateTime.now() on the fly without server cron dependencies.</li>
+      <li><b>Dual Property Classification:</b> Seamlessly manages both commercial units (shops/offices) and residential/personal units.</li>
+      <li><b>Reactive Multi-Filter Stream:</b> Combines full-text search with status filters (All, Paid, Pending, Overdue) using computed providers with minimal widget rebuilds.</li>
+      <li><b>Zero-Trust Multi-Tenant Security:</b> Supabase PostgreSQL Row-Level Security (RLS) guaranteeing strict data isolation per user.</li>
+    </ul>
+  </details>
+
+  <div class="project-links-row">
+    <a class="btn main" href="#prototype" data-open="rent">Try Interactive Prototype 📱</a>
+    <a class="btn" href="[ADD GITHUB LINK]" target="_blank" rel="noopener">GitHub Repo ↗</a>
+    <a class="btn" href="[ADD DEMO VIDEO LINK]" target="_blank" rel="noopener">Demo Video 🎬</a>
+    <a class="btn" href="[ADD APK / PLAY STORE LINK]" target="_blank" rel="noopener">APK / Store 📦</a>
+  </div>
 </div>
 <div class="side">
-<h4>My role</h4>
-<div class="chips"><span>Mobile Development</span><span>State Management</span><span>Chart Visualization</span><span>Offline Storage</span></div>
-<h4>Built with</h4>
-<div class="chips"><span>Flutter</span><span>Dart</span><span>Firebase Auth</span><span>Local Notifications</span><span>Vector Charts</span><span>Clean Architecture</span></div>
+  <h4>My role</h4>
+  <div class="chips"><span>Lead Flutter Architect</span><span>Riverpod State</span><span>Supabase Backend</span><span>Clean Architecture</span></div>
+  <h4>Built with</h4>
+  <div class="chips"><span>Flutter 3.x</span><span>Dart</span><span>Riverpod 2.x</span><span>Supabase</span><span>PostgreSQL RLS</span><span>Material 3</span></div>
 </div>
 </article>
 
@@ -1565,7 +1937,7 @@ select.exp-field { appearance: none; }
 <div class="tools">
   <button id="hint" aria-pressed="false">Show tappable areas</button>
   <button id="back">Back</button>
-  <button id="sound-btn" class="tool-btn" aria-pressed="true" title="Audio feedback for prototype touches">🔊 Audio Haptics: ON</button>
+  <button id="sound-btn" class="tool-btn" aria-pressed="false" title="Audio feedback for prototype touches">🔇 Audio Haptics: OFF (Opt-in)</button>
   <button id="code-btn" class="tool-btn highlight" title="Inspect real Flutter Riverpod and Supabase RLS code">⚡ Dart &amp; RLS Code</button>
 </div>
 
@@ -1842,7 +2214,6 @@ select.exp-field { appearance: none; }
 <div class="contact-hub">
   <div class="hub-loc">
     <span>📍 Based in Kochi, Kerala, India (IST)</span>
-    <span>📞 +91 9846578590</span>
     <span>Local Time: <span class="hub-time" id="kerala-clock">--:--:-- IST</span></span>
   </div>
   <div class="hub-copy-box" id="hub-copy-email" title="Click to copy email">
@@ -1854,9 +2225,10 @@ select.exp-field { appearance: none; }
   </div>
 </div>
 
-<div class="btns" style="justify-content:center"><a class="btn main" href="mailto:parvathy2000.20@gmail.com">Send Email ✉️</a><a class="btn" href="https://linkedin.com/in/parvathy-a-m" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/parvathyAM" target="_blank" rel="noopener">GitHub</a></div>
+<div class="btns" style="justify-content:center"><a class="btn main" href="mailto:parvathy2000.20@gmail.com">Send Email ✉️</a><a class="btn" href="[ADD LINKEDIN LINK]" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/parvathyAM" target="_blank" rel="noopener">GitHub</a></div>
 </div></section>
 
+</main>
 
 <!-- Back to Top Button -->
 <button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Scroll to top">
@@ -2439,7 +2811,7 @@ if (tBtn) {
 
 // --- WEB AUDIO SYNTH HAPTIC FEEDBACK ---
 let audioCtx = null;
-let soundEnabled = true;
+let soundEnabled = false;
 function playHaptic(type = 'tap') {
   if (!soundEnabled) return;
   try {
