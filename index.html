@@ -115,7 +115,6 @@ h1{font-size:clamp(42px,7vw,76px);font-weight:800}
 .chips span{font-size:14px;padding:5px 12px;border-radius:99px;background:var(--tint);color:var(--blue);font-weight:500}
 .case{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:40px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px}
 .case h3{font-size:30px;margin-bottom:6px}
-.case-eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);margin-bottom:8px;display:block}
 .case .sub{color:var(--muted);margin:0 0 20px}
 .case ul{margin:0 0 22px;padding-left:20px}.case li{margin-bottom:8px}
 .side{background:var(--bg);border-radius:16px;padding:24px;align-self:start}
@@ -1475,14 +1474,97 @@ nav a.nav-active::after {
 
 /* Project Cards Consistency */
 .case-badge {
-  display: inline-block;
-  font-size: 11px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11.5px;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--blue);
+  background: var(--tint);
+  border: 1px solid color-mix(in srgb, var(--blue) 25%, transparent);
+  padding: 5px 12px;
+  border-radius: 99px;
+  margin-bottom: 10px;
+}
+.case-badge::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--blue);
+}
+.project-screen-badge {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  display: block;
+  text-decoration: none;
+}
+.project-screen-badge:hover {
+  transform: translateY(-2px);
+  border-color: var(--blue);
+  box-shadow: 0 8px 20px -8px rgba(11, 99, 206, 0.25);
+}
+.screen-badge-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--muted);
   margin-bottom: 6px;
 }
+.screen-badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10B981;
+}
+.screen-badge-body {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.screen-badge-icon {
+  font-size: 22px;
+  line-height: 1;
+}
+.screen-badge-body b {
+  display: block;
+  font-size: 13px;
+  color: var(--ink);
+}
+.screen-badge-body small {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+}
+.project-media-slot {
+  background: var(--bg);
+  border: 1px dashed var(--line);
+  border-radius: 14px;
+  padding: 22px 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.media-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.media-icon { font-size: 26px; }
+.media-placeholder b { font-size: 13px; color: var(--ink); }
+.media-placeholder small { font-size: 11.5px; color: var(--muted); }
 
 .project-meta-grid {
   display: grid;
@@ -1704,9 +1786,9 @@ nav a.nav-active::after {
 <!-- PROJECT 1: Telecaller CRM App -->
 <article class="case">
 <div>
-<div class="case-eyebrow">Production Business App · Brynex</div>
-<h3>Telecaller CRM App</h3>
-<p class="sub">Dedicated Flutter CRM &amp; call-management app for retail telecalling sales teams</p>
+<div class="case-badge">Production Business App · Brynex</div>
+<h3>CRM Application for Telecallers</h3>
+<p class="sub">Production Business App · Brynex · Dedicated Flutter CRM &amp; Call Management</p>
 <p>A specialized mobile CRM built to manage the complete telecalling sales cycle across store branches: outbound cold calls, inbound customer inquiries, verified lead disposition, follow-up queues, and customer complaints.</p>
 <ul>
 <li><b>Verified Call Tracking</b>: Automatic timer and verification confirming a call occurred before allowing lead disposition to be saved.</li>
@@ -1718,6 +1800,10 @@ nav a.nav-active::after {
 <a class="btn main" href="#prototype" data-open="tele">Try the Telecaller prototype</a>
 </div>
 <div class="side">
+<div class="project-screen-badge" data-open="tele">
+  <div class="screen-badge-header"><span class="screen-badge-dot"></span> Production Business App · Brynex</div>
+  <div class="screen-badge-body"><span class="screen-badge-icon">📱</span><div><b>Telecaller CRM UI</b><small>Click to open interactive screen demo</small></div></div>
+</div>
 <h4>My role</h4>
 <div class="chips"><span>UI / UX Engineering</span><span>State Management</span><span>REST API Integration</span><span>Call Verification</span></div>
 <h4>Built with</h4>
@@ -1728,9 +1814,9 @@ nav a.nav-active::after {
 <!-- PROJECT 2: Retail Walk-in, Operations & Staff LMS App -->
 <article class="case">
 <div>
-<div class="case-eyebrow">Production Business App · Brynex</div>
-<h3>Retail Walk-in, Operations &amp; Staff LMS App</h3>
-<p class="sub">In-store showroom foot-traffic tracking, barcode inventory lookup &amp; employee training platform</p>
+<div class="case-badge">Production Business App · Brynex</div>
+<h3>Sales Management &amp; Retail Operations Platform</h3>
+<p class="sub">Production Business App · Brynex · Showroom Foot-Traffic, Barcode Scanner &amp; Staff LMS</p>
 <p>An enterprise in-store operations app built for showroom floor associates and store managers at <a href="https://www.brynex.com" target="_blank" rel="noopener" style="color:var(--blue)">Brynex</a>. It digitizes customer showroom visits, enables instant camera/barcode price and inventory checks, manages daily operational tasks, and provides video-based staff upskilling courses.</p>
 <ul>
 <li><b>Showroom Walk-in Engine</b>: Fast digital logging of visitor counts, interest categories, budget tiers, and consultation notes across store clusters.</li>
@@ -1742,6 +1828,10 @@ nav a.nav-active::after {
 <a class="btn main" href="#prototype" data-open="ops">Try the Retail &amp; LMS prototype</a>
 </div>
 <div class="side">
+<div class="project-screen-badge" data-open="ops">
+  <div class="screen-badge-header"><span class="screen-badge-dot"></span> Production Business App · Brynex</div>
+  <div class="screen-badge-body"><span class="screen-badge-icon">📱</span><div><b>Retail Ops &amp; LMS UI</b><small>Click to open interactive screen demo</small></div></div>
+</div>
 <h4>My role</h4>
 <div class="chips"><span>Mobile Architecture</span><span>UI Development</span><span>State Management</span><span>Barcode &amp; Video Player</span><span>RBAC</span></div>
 <h4>Built with</h4>
@@ -1753,9 +1843,9 @@ nav a.nav-active::after {
 <!-- PROJECT 3: Rent Tracker App -->
 <article class="case">
 <div>
-<div class="case-eyebrow">Property &amp; Rental Ledger · Riverpod 2.x &amp; Supabase</div>
-<h3>Rent Tracker</h3>
-<p class="sub">Cross-platform financial &amp; property management app (Mobile, Tablet &amp; Web)</p>
+<div class="case-badge">Property &amp; Rental Ledger · Riverpod 2.x &amp; Supabase</div>
+<h3>Property &amp; Rental Ledger</h3>
+<p class="sub">Property &amp; Rental Ledger · Riverpod 2.x &amp; Supabase · Multi-Tenant Cross-Platform Platform</p>
 <p>Replaces messy spreadsheets and bloated enterprise software with a lightning-fast, sleek, and automated rent-collection ledger for landlords and property owners. Built with Flutter, Riverpod, and Supabase PostgreSQL.</p>
 <ul>
 <li><b>Clean Layered Architecture</b>: Strict separation between Presentation, State Management (Riverpod AsyncNotifier), Domain Models, and Supabase Data Layer.</li>
@@ -1767,6 +1857,10 @@ nav a.nav-active::after {
 <a class="btn main" href="#prototype" data-open="rent">Try the Rent Tracker prototype</a>
 </div>
 <div class="side">
+<div class="project-screen-badge" data-open="rent">
+  <div class="screen-badge-header"><span class="screen-badge-dot"></span> Property &amp; Rental Ledger</div>
+  <div class="screen-badge-body"><span class="screen-badge-icon">📱</span><div><b>Rent Tracker Ledger UI</b><small>Click to open interactive screen demo</small></div></div>
+</div>
 <h4>My role</h4>
 <div class="chips"><span>Lead Flutter Architect</span><span>Riverpod State</span><span>Supabase Backend</span><span>Clean Architecture</span></div>
 <h4>Built with</h4>
@@ -1777,9 +1871,9 @@ nav a.nav-active::after {
 <!-- PROJECT 4: Expense Tracker App -->
 <article class="case">
 <div>
-<div class="case-eyebrow">Personal Finance &amp; Budget Platform · SQLite &amp; Firebase</div>
+<div class="case-badge">Personal Finance &amp; Budget Platform · SQLite &amp; Firebase</div>
 <h3>Expense Tracker</h3>
-<p class="sub">Personal finance, cashflow breakdown &amp; smart savings goal tracker (Android &amp; iOS)</p>
+<p class="sub">Personal Finance &amp; Budget Platform · SQLite &amp; Firebase · Reactive Cashflow &amp; Savings Goals</p>
 <p>A complete personal finance and expense logging Flutter application for managing daily cashflow, categorizing spending, visualizing monthly financial ratios, setting milestone savings goals, and getting scheduled bill reminders.</p>
 <ul>
 <li><b>Reactive Financial Engine</b>: Instant on-device calculations dynamically recomputing total balances, income/expense ratios, and category allocations with zero delay.</li>
@@ -1792,6 +1886,10 @@ nav a.nav-active::after {
 <a class="btn main" href="#prototype" data-open="expense">Try the Expense Tracker prototype</a>
 </div>
 <div class="side">
+<div class="project-screen-badge" data-open="expense">
+  <div class="screen-badge-header"><span class="screen-badge-dot"></span> Personal Finance &amp; Budget Platform</div>
+  <div class="screen-badge-body"><span class="screen-badge-icon">📱</span><div><b>Expense Tracker UI</b><small>Click to open interactive screen demo</small></div></div>
+</div>
 <h4>My role</h4>
 <div class="chips"><span>Mobile Development</span><span>State Management</span><span>Chart Visualization</span><span>Offline Storage</span></div>
 <h4>Built with</h4>
@@ -1803,7 +1901,7 @@ nav a.nav-active::after {
 
 <section id="prototype" class="reveal"><div class="wrap">
 <h2>Prototype</h2>
-<div class="jump" id="apps"><button data-app="tele">Telecaller App</button><button data-app="ops">Retail Walk-in &amp; LMS App</button><button data-app="rent">Rent Tracker App</button><button data-app="expense">Expense Tracker</button></div>
+<div class="jump" id="apps"><button data-app="tele">Production App · Brynex (CRM)</button><button data-app="ops">Production App · Brynex (Retail &amp; LMS)</button><button data-app="rent">Property &amp; Rental Ledger (Riverpod)</button><button data-app="expense">Personal Finance &amp; Budget (SQLite &amp; Firebase)</button></div>
 <div class="proto">
 <div class="dev">
   <div class="dynamic-island" id="dyn-island" title="Dynamic Island · Tap to expand">
