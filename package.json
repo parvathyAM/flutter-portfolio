@@ -1,0 +1,21 @@
+{
+  "name": "flutter-portfolio",
+  "version": "1.0.0",
+  "description": "Parvathy A M · Flutter Developer Portfolio with Interactive Mobile App Prototypes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "flutter",
+    "portfolio",
+    "dart",
+    "mobile-developer"
+  ],
+  "author": "Parvathy A M",
+  "license": "MIT",
+  "dependencies": {
+    "jimp": "^1.6.1"
+  }
+}
